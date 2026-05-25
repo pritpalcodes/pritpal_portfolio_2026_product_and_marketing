@@ -1,0 +1,38 @@
+[
+  {
+    "title": "n8n Growth Workflows",
+    "kind": "AI Workflow",
+    "blurb": "Autonomous research → brief → article → translation pipelines for B2B SaaS teams.",
+    "tag": "Automation"
+  },
+  {
+    "title": "Latency Ad Concepts",
+    "kind": "Product Strategy",
+    "blurb": "Ad formats that earn the wait during AI inference — without breaking trust.",
+    "tag": "AI"
+  },
+  {
+    "title": "Feature Teardowns",
+    "kind": "Writing",
+    "blurb": "Weekly product teardowns: Rapido, Pocket FM, Uber, and the small UX decisions that move marketplaces.",
+    "tag": "Analysis"
+  },
+  {
+    "title": "Marketplace Sketches",
+    "kind": "0 → 1",
+    "blurb": "Two-sided business models with GPS, geofencing, and measurable OOH — mostly notebooks, sometimes more.",
+    "tag": "Marketplace"
+  },
+  {
+    "title": "SEO Brief Generator",
+    "kind": "Micro-product",
+    "blurb": "A tiny tool that turns a single keyword into a full structured SEO brief in under 30 seconds.",
+    "tag": "Tool"
+  },
+  {
+    "title": "Hackathon Experiments",
+    "kind": "Side Projects",
+    "blurb": "Weekend builds — usually involving an LLM, a webhook, and a bad idea worth shipping.",
+    "tag": "Hack"
+  }
+]

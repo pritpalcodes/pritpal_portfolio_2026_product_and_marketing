@@ -1,0 +1,145 @@
+[
+  {
+    "slug": "autonomous-blog-growth-engine",
+    "title": "Autonomous Blog Growth Engine",
+    "subtitle": "AI-powered, multilingual SEO content pipeline built with n8n + OpenAI.",
+    "year": "2025",
+    "role": "Product · Growth · AI",
+    "tags": ["Growth", "AI", "Workflow Automation", "SEO", "Multilingual"],
+    "color": "#F97316",
+    "summary": "Turned a multi-hour SEO content workflow into an automated decision engine — researcher → strategist → writer → translator → knowledge base.",
+    "problem": "B2B SaaS content teams burn 2–4 hours per article on keyword research, briefs, writing, and localisation. Velocity stalls, SEO structure drifts, and cost per article climbs.",
+    "opportunity": "Treat AI not as a writer, but as a multi-stage decision engine that mimics a growth team — so humans can focus on what content deserves to exist, not how to ship it.",
+    "approach": "Built a six-stage n8n pipeline (Market Intelligence → Keyword Prioritisation → SEO Brief → AI Writing → Localisation → Knowledge Repository) wired to the OpenAI API and Google Workspace.",
+    "experiments": [
+      "Weighted opportunity scoring across 30+ keywords (volume + competition + difficulty).",
+      "Brief generator producing title, meta, H1/H2/H3, semantic keywords, FAQs, CTA.",
+      "MENA-focused English → Arabic localisation that preserves SEO context.",
+      "Auto-publishing to Sheets + Docs as a reusable content knowledge base."
+    ],
+    "metrics": [
+      { "label": "Manual effort reduced", "value": "~80–90%" },
+      { "label": "Workflow compressed", "value": "Hours → minutes" },
+      { "label": "Languages shipped", "value": "EN + AR" }
+    ],
+    "lessons": [
+      "Most content velocity wins come from removing decisions, not writing faster.",
+      "AI workflows need taste — guardrails against keyword stuffing matter more than the model."
+    ],
+    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1600&q=80"
+  },
+  {
+    "slug": "monetising-ai-latency",
+    "title": "Monetising AI Latency",
+    "subtitle": "The economics of conversational advertising during model inference.",
+    "year": "2025",
+    "role": "Product Strategy · Monetisation",
+    "tags": ["Strategy", "AI", "Monetisation", "Advertising"],
+    "color": "#F97316",
+    "summary": "A consulting-style product case exploring whether AI response latency can be turned into contextual ad inventory — subsidising inference cost without breaking trust.",
+    "problem": "LLM inference cost scales linearly with usage, while existing revenue models (subs, API pricing) cap revenue per query. Every prompt also burns unused user attention during generation.",
+    "opportunity": "Convert AI latency into a new ad surface: Prompt → AI Processing → Contextual Micro-Experience → Response. Sponsored recos, brand cards, micro-video, contextual commerce.",
+    "approach": "Evaluated through a four-lens framework — Market Analysis, Product Design, Business & Economics, Feasibility — landing on revenue per query, unit economics, and trust-preserving formats.",
+    "experiments": [
+      "Sized attention inventory created by typical 2–6s response windows.",
+      "Modelled revenue per query and break-even against per-token inference cost.",
+      "Sketched ad formats ranked by perceived intrusion vs. contextual relevance."
+    ],
+    "metrics": [
+      { "label": "Untapped attention", "value": "Every query" },
+      { "label": "Best fit", "value": "Free AI products" },
+      { "label": "Deliverable", "value": "20-slide deck" }
+    ],
+    "lessons": [
+      "Latency is a feature, not a bug — if the experience earns the wait.",
+      "Trust collapses faster than CTR rises; format choice beats placement choice."
+    ],
+    "image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1600&q=80"
+  },
+  {
+    "slug": "moving-targets-india-ride-hail-ads",
+    "title": "Moving Targets",
+    "subtitle": "India's first ride-hail advertising marketplace — turning fleets into measurable OOH.",
+    "year": "2024",
+    "role": "Product · Marketplace · 0→1",
+    "tags": ["Marketplace", "OOH", "GPS", "India", "0→1"],
+    "color": "#F97316",
+    "summary": "Designed a two-sided marketplace connecting brands directly to ride-hail drivers, with GPS-powered impression tracking and dynamic pricing.",
+    "problem": "Vehicle advertising is fragmented and unmeasured. Brands juggle small agencies, drivers get one-off bonuses, and there's no ROI data on mobile OOH despite 1M+ cabs on Indian roads.",
+    "opportunity": "A ₹18B serviceable market hiding in plain sight — if you can centralise supply, measure impressions with GPS, and automate permits and payouts.",
+    "approach": "Built the product around four shifts: supply control, real-time measurement, recurring driver economics, and regulatory-by-default.",
+    "experiments": [
+      "Smart fleet matching by route, location, and audience movement.",
+      "AI geofencing for context-aware campaigns in high-value zones.",
+      "Dynamic pricing engine adjusting for route quality, traffic, and peak hours.",
+      "Automated permit & RTO compliance per city."
+    ],
+    "metrics": [
+      { "label": "Per-vehicle brand spend", "value": "₹6,000/mo" },
+      { "label": "Monthly impressions @10k cars", "value": "~300M" },
+      { "label": "GMV at 1% fleet capture", "value": "₹1B" },
+      { "label": "Annual platform revenue", "value": "₹360M" }
+    ],
+    "lessons": [
+      "Marketplaces win on measurement before they win on supply.",
+      "Driver economics is the real distribution channel — recurring beats lump-sum."
+    ],
+    "image": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1600&q=80"
+  },
+  {
+    "slug": "pocketfm-social-discovery",
+    "title": "Pocket FM — Social Discovery",
+    "subtitle": "Turning passive audio consumption into a viral, share-led growth engine.",
+    "year": "2024",
+    "role": "Product · Growth · Retention",
+    "tags": ["Growth", "Retention", "Viral Loops", "Community"],
+    "color": "#F97316",
+    "summary": "Designed share-led discovery for serialized audio: clip cards, audiograms, and group-listening rituals that move PFM from consumption to community.",
+    "problem": "PFM users binge serialized stories for hours but the experience is private. No way to share a cliffhanger or recommend a moment — so organic acquisition and network effects stall.",
+    "opportunity": "Stories are now the default sharing format. Combine serialized audio with native social — and audio becomes a Spotify-style growth engine, not a podcast app.",
+    "approach": "Layered a social sharing ecosystem on top of existing playback: shareable clip cards, in-app audiograms, and gamified group-listening rituals.",
+    "experiments": [
+      "One-tap 15s clip → dynamic story card with animated waveform → deep link to timestamp.",
+      "Playable audiograms doubling as external acquisition hook and internal retention loop.",
+      "Listening parties, quote challenges, and invite-based co-listening."
+    ],
+    "metrics": [
+      { "label": "North-star", "value": "Share-driven listens / DAU" },
+      { "label": "Target K-factor", "value": ">1" },
+      { "label": "Referral install lift", "value": "+20% target" }
+    ],
+    "lessons": [
+      "People share to express identity, not to broadcast content.",
+      "Internal feeds matter more than external shares for retention compounding."
+    ],
+    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1600&q=80"
+  },
+  {
+    "slug": "rapido-radical-transparency",
+    "title": "Rapido: Radical Transparency",
+    "subtitle": "Feature teardown — does showing live driver rejections actually improve UX?",
+    "year": "2024",
+    "role": "Product Teardown · UX Research",
+    "tags": ["UX", "Marketplace", "Behavioral Design"],
+    "color": "#F97316",
+    "summary": "A teardown of Rapido's live 'X of Y captains rejected' UI — the trade-offs between transparency, control, and emotional friction in a two-sided marketplace.",
+    "problem": "Ride-matching is a black box. Users wait in silence, unsure if the app is stuck, the fare is too low, or they should switch platforms. Cancellations rise with ambiguity.",
+    "opportunity": "Expose the supply side. Stream live captain-rejection events to the rider so the invisible backend becomes a visible, actionable interaction.",
+    "approach": "Mapped the new UX flow, listed the product hypotheses behind the choice, and pressure-tested them against community sentiment and behavioural design theory.",
+    "experiments": [
+      "Hypothesis: Transparency reduces uncertainty even when the news is bad.",
+      "Hypothesis: Visible rejections nudge users to surge their bid or pickup.",
+      "Counter-hypothesis: Rejection counters create emotional friction that erodes trust."
+    ],
+    "metrics": [
+      { "label": "Reduces ambiguity", "value": "Yes" },
+      { "label": "Adds emotional friction", "value": "Also yes" },
+      { "label": "Net trust impact", "value": "Format-dependent" }
+    ],
+    "lessons": [
+      "Users don't want more information — they want information they can act on.",
+      "How and when you frame data matters more than whether you show it."
+    ],
+    "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=1600&q=80"
+  }
+]

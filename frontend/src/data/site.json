@@ -1,0 +1,42 @@
+{
+  "name": "Pritpal Singh",
+  "role": "Product Manager · Growth",
+  "tagline": "I build, break, and rebuild products — usually with too much coffee and a soft spot for marketplaces, AI, and 0→1.",
+  "longIntro": [
+    "I'm a product person who lives at the intersection of growth, AI, and storytelling. I've built and scaled experiments across SaaS, ride-hailing, real estate, and content platforms — usually starting from a vague problem and a blank Figma file.",
+    "My favourite kind of work is the quiet, unglamorous loop: spot a friction, sketch the hypothesis, run the experiment, measure honestly, and decide what gets to ship next. I care more about retention than launches, more about taste than templates.",
+    "Right now I'm leading SEO-led organic growth at Omniful, building autonomous content workflows in n8n, and writing product teardowns about the marketplaces that quietly shape our days."
+  ],
+  "location": "Gurgaon, India",
+  "timezone": "Asia/Kolkata",
+  "email": "emails.for.pritpal@gmail.com",
+  "resume": "/assets/Pritpal_Singh_Resume.pdf",
+  "socials": {
+    "linkedin": "https://www.linkedin.com/in/oye-pritpal/",
+    "github": "#",
+    "twitter": "#",
+    "medium": "#",
+    "certifications": "https://www.linkedin.com/in/oye-pritpal/details/certifications/"
+  },
+  "statusBubbles": [
+    "Probably drinking coffee ☕",
+    "Thinking about AI products",
+    "Building weird side projects",
+    "Exploring product ideas",
+    "Watching user behavior",
+    "Sketching product flows",
+    "Probably debugging life",
+    "Reading a teardown",
+    "Writing in a notebook"
+  ],
+  "imageLabels": [
+    "Product Nerd",
+    "Growth Thinker",
+    "0→1 Builder",
+    "AI Explorer",
+    "User Obsessed",
+    "Experiment Driven",
+    "Coffee Powered",
+    "Systems Thinker"
+  ]
+}
