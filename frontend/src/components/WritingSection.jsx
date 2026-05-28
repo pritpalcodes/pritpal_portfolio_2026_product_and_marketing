@@ -7,14 +7,14 @@ export default function WritingSection() {
     <section
       id="writing"
       data-testid="writing-section"
-      className="relative px-6 sm:px-12 lg:px-20 max-w-6xl mx-auto py-24 sm:py-32"
+      className="relative px-6 sm:px-12 lg:px-20 max-w-6xl mx-auto py-14 sm:py-28"
     >
-      <div className="mb-12 flex items-baseline justify-between gap-6">
+      <div className="mb-8 sm:mb-12 flex items-baseline justify-between gap-6">
         <div>
-          <div className="text-xs uppercase tracking-[0.22em] text-neutral-400 mb-3">
-            05 · Writing
+          <div className="text-[11px] uppercase tracking-[0.22em] text-neutral-400 mb-2">
+            Writing
           </div>
-          <h2 className="font-serif text-4xl sm:text-5xl">
+          <h2 className="font-serif text-3xl sm:text-5xl">
             Notes, <em>essays,</em> and teardowns.
           </h2>
         </div>
@@ -29,10 +29,10 @@ export default function WritingSection() {
             <Link
               to={`/writing/${w.slug}`}
               data-testid={`writing-link-${w.slug}`}
-              className="group flex items-center justify-between gap-6 py-6 transition-transform"
+              className="group flex items-center justify-between gap-4 sm:gap-6 py-5 sm:py-6 transition-transform"
             >
               <div className="flex-1 min-w-0">
-                <h3 className="font-serif text-xl sm:text-2xl leading-snug transition-transform group-hover:translate-x-1.5">
+                <h3 className="font-serif text-lg sm:text-2xl leading-snug transition-transform group-hover:translate-x-1.5">
                   {w.title}
                 </h3>
                 <p className="mt-1 text-sm text-neutral-600 line-clamp-1">
@@ -40,10 +40,10 @@ export default function WritingSection() {
                 </p>
               </div>
               <div className="flex items-center gap-4">
-                <span className="font-mono text-xs text-neutral-400 opacity-0 group-hover:opacity-100 transition-opacity">
+                <span className="font-mono text-xs text-neutral-400 opacity-0 group-hover:opacity-100 transition-opacity hidden sm:inline">
                   {w.date}
                 </span>
-                <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-neutral-500 group-hover:border-orange-300 group-hover:text-orange-600 transition-colors">
+                <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-neutral-500 group-hover:border-orange-300 group-hover:text-orange-600 transition-colors shrink-0">
                   <ArrowUpRight size={14} strokeWidth={1.8} />
                 </span>
               </div>

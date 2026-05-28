@@ -8,6 +8,7 @@ import WritingDetail from "@/pages/WritingDetail";
 import PlaygroundDetail from "@/pages/PlaygroundDetail";
 import ScrollProgress from "@/components/ScrollProgress";
 import ClickPop from "@/components/ClickPop";
+import ScrollToTop from "@/components/ScrollToTop";
 
 function App() {
   useEffect(() => {
@@ -30,6 +31,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <ScrollToTop />
         <ScrollProgress />
         <ClickPop />
         <Routes>

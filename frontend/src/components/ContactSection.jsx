@@ -22,15 +22,15 @@ export default function ContactSection() {
     <section
       id="contact"
       data-testid="contact-section"
-      className="relative px-6 sm:px-12 lg:px-20 max-w-5xl mx-auto py-24 sm:py-36 text-center"
+      className="relative px-6 sm:px-12 lg:px-20 max-w-5xl mx-auto py-16 sm:py-32 text-center"
     >
-      <div className="text-xs uppercase tracking-[0.22em] text-neutral-400 mb-4">
+      <div className="text-[11px] uppercase tracking-[0.22em] text-neutral-400 mb-3">
         Get in touch
       </div>
-      <h2 className="font-serif text-4xl sm:text-6xl leading-tight">
+      <h2 className="font-serif text-3xl sm:text-6xl leading-tight">
         Let's build something <em>weird.</em>
       </h2>
-      <p className="mt-5 text-neutral-600 max-w-xl mx-auto">
+      <p className="mt-4 sm:mt-5 text-neutral-600 max-w-xl mx-auto text-sm sm:text-base">
         Always open to talking about products, growth, side projects, or your
         favourite teardown.
       </p>
@@ -38,9 +38,9 @@ export default function ContactSection() {
       <button
         onClick={copy}
         data-testid="email-pill"
-        className="group mt-10 inline-flex items-center gap-3 px-5 sm:px-8 py-4 sm:py-5 rounded-full bg-white border border-black/10 soft-shadow-lg hover:border-orange-300 transition-colors"
+        className="group mt-8 sm:mt-10 inline-flex items-center gap-3 px-5 sm:px-8 py-3.5 sm:py-5 rounded-full bg-white border border-black/10 soft-shadow-lg hover:border-orange-300 transition-colors"
       >
-        <span className="font-serif text-xl sm:text-3xl text-neutral-900 group-hover:text-orange-600 transition-colors break-all">
+        <span className="font-serif text-lg sm:text-3xl text-neutral-900 group-hover:text-orange-600 transition-colors break-all">
           {site.email}
         </span>
         <span className="shrink-0 inline-flex h-9 w-9 items-center justify-center rounded-full bg-orange-50 text-orange-600">
@@ -48,7 +48,7 @@ export default function ContactSection() {
         </span>
       </button>
 
-      <div className="mt-12 flex flex-wrap items-center justify-center gap-3">
+      <div className="mt-8 sm:mt-12 flex flex-wrap items-center justify-center gap-3">
         {ICONS.map(({ key, icon: Icon, label, url }) => (
           <motion.a
             key={key}
@@ -58,7 +58,7 @@ export default function ContactSection() {
             data-testid={`social-${key}`}
             whileHover={{ y: -3 }}
             transition={{ type: "spring", stiffness: 280, damping: 20 }}
-            className="inline-flex items-center gap-2 h-11 px-4 rounded-full bg-white border border-black/10 hover:border-orange-300 hover:text-orange-600 text-sm text-neutral-700 transition-colors"
+            className="inline-flex items-center gap-2 h-10 sm:h-11 px-4 rounded-full bg-white border border-black/10 hover:border-orange-300 hover:text-orange-600 text-sm text-neutral-700 transition-colors"
           >
             <Icon size={15} strokeWidth={1.7} />
             <span>{label}</span>

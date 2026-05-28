@@ -40,7 +40,6 @@ export default function Home() {
   }, []);
 
   const externalUrls = {
-    certifications: site.socials.linkedinCertifications,
     linkedin: site.socials.linkedin,
   };
 
@@ -51,11 +50,13 @@ export default function Home() {
         active={active}
         onNavigate={navigateTo}
         externalUrls={externalUrls}
+        resumeUrl={site.resume}
       />
       <MobileNav
         active={active}
         onNavigate={navigateTo}
         externalUrls={externalUrls}
+        resumeUrl={site.resume}
       />
       <CommandPalette onNavigate={navigateTo} />
       <EasterEgg />

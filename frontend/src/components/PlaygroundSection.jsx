@@ -7,18 +7,18 @@ export default function PlaygroundSection() {
     <section
       id="playground"
       data-testid="playground-section"
-      className="relative px-6 sm:px-12 lg:px-20 max-w-6xl mx-auto py-24 sm:py-32"
+      className="relative px-6 sm:px-12 lg:px-20 max-w-6xl mx-auto py-14 sm:py-28"
     >
-      <div className="mb-12">
-        <div className="text-xs uppercase tracking-[0.22em] text-neutral-400 mb-3">
-          04 · Playground
+      <div className="mb-8 sm:mb-12">
+        <div className="text-[11px] uppercase tracking-[0.22em] text-neutral-400 mb-2">
+          Playground
         </div>
-        <h2 className="font-serif text-4xl sm:text-5xl">
+        <h2 className="font-serif text-3xl sm:text-5xl">
           Side projects, <em>tools,</em> and bad ideas worth shipping.
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
         {playground.map((p, i) => (
           <motion.div
             key={p.slug}
@@ -30,9 +30,9 @@ export default function PlaygroundSection() {
             <Link
               to={`/playground/${p.slug}`}
               data-testid={`playground-link-${p.slug}`}
-              className="block p-6"
+              className="block p-5 sm:p-6"
             >
-              <div className="flex items-start justify-between mb-4">
+              <div className="flex items-start justify-between mb-3 sm:mb-4">
                 <span className="text-[10px] uppercase tracking-wider px-2 py-1 rounded-full bg-orange-50 text-orange-700">
                   {p.kind}
                 </span>
@@ -40,11 +40,11 @@ export default function PlaygroundSection() {
                   #{p.tag.toLowerCase()}
                 </span>
               </div>
-              <h3 className="font-serif text-2xl leading-tight">{p.title}</h3>
-              <p className="mt-3 text-sm text-neutral-600 leading-relaxed">
+              <h3 className="font-serif text-xl sm:text-2xl leading-tight">{p.title}</h3>
+              <p className="mt-2 sm:mt-3 text-sm text-neutral-600 leading-relaxed">
                 {p.blurb}
               </p>
-              <div className="mt-6 dotted-line" />
+              <div className="mt-5 sm:mt-6 dotted-line" />
               <div className="mt-3 flex items-center justify-between text-xs">
                 <span className="text-neutral-400">Open case</span>
                 <span className="text-orange-500 opacity-0 group-hover:opacity-100 transition-opacity">

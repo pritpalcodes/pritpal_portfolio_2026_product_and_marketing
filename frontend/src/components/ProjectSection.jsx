@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import projects from "../data/projects.json";
 
@@ -12,14 +12,14 @@ export default function ProjectSection() {
     <section
       id="projects"
       data-testid="projects-section"
-      className="relative px-6 sm:px-12 lg:px-20 max-w-6xl mx-auto py-24 sm:py-32"
+      className="relative px-6 sm:px-12 lg:px-20 max-w-6xl mx-auto py-14 sm:py-28"
     >
-      <div className="flex items-baseline justify-between gap-6 mb-12">
+      <div className="flex items-baseline justify-between gap-6 mb-8 sm:mb-12">
         <div>
-          <div className="text-xs uppercase tracking-[0.2em] text-neutral-400 mb-3">
-            02 · Selected Work
+          <div className="text-[11px] uppercase tracking-[0.22em] text-neutral-400 mb-2">
+            Selected Work
           </div>
-          <h2 className="font-serif text-4xl sm:text-5xl">
+          <h2 className="font-serif text-3xl sm:text-5xl">
             Cases, sketches, <em>and ships.</em>
           </h2>
         </div>
@@ -40,17 +40,17 @@ export default function ProjectSection() {
                   data-testid={`project-item-${p.slug}`}
                   onMouseEnter={() => setActive(i)}
                   onFocus={() => setActive(i)}
-                  className="group block py-5 border-b border-black/10"
+                  className="group block py-4 sm:py-5 border-b border-black/10"
                 >
                   <div className="flex items-baseline justify-between gap-4">
                     <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-neutral-400 mb-2">
+                      <div className="flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-neutral-400 mb-1.5 sm:mb-2">
                         <span>{p.year}</span>
                         <span>·</span>
                         <span>{p.role}</span>
                       </div>
                       <h3
-                        className={`font-serif text-2xl sm:text-3xl leading-tight transition-colors ${
+                        className={`font-serif text-xl sm:text-3xl leading-tight transition-colors ${
                           isActive ? "text-orange-600" : "text-neutral-900"
                         }`}
                       >
@@ -61,15 +61,15 @@ export default function ProjectSection() {
                       </p>
                     </div>
                     <motion.span
-                      animate={{ rotate: isActive ? -45 : 0 }}
-                      transition={{ type: "spring", stiffness: 200, damping: 18 }}
+                      animate={{ x: isActive ? 4 : 0 }}
+                      transition={{ type: "spring", stiffness: 220, damping: 20 }}
                       className={`shrink-0 inline-flex h-9 w-9 items-center justify-center rounded-full border transition-colors ${
                         isActive
                           ? "border-orange-300 bg-orange-50 text-orange-600"
                           : "border-black/10 text-neutral-500"
                       }`}
                     >
-                      <ArrowUpRight size={16} strokeWidth={1.8} />
+                      <ArrowRight size={16} strokeWidth={1.8} />
                     </motion.span>
                   </div>
                 </Link>
@@ -78,8 +78,8 @@ export default function ProjectSection() {
           })}
         </ul>
 
-        {/* RIGHT — preview panel */}
-        <div className="md:sticky md:top-28 self-start">
+        {/* RIGHT — preview panel (desktop only) */}
+        <div className="hidden md:block md:sticky md:top-28 self-start">
           <AnimatePresence mode="wait">
             <motion.div
               key={cur.slug}
@@ -150,7 +150,7 @@ export default function ProjectSection() {
                   className="inline-flex items-center gap-1.5 text-sm text-orange-600 hover:text-orange-700"
                 >
                   Read case study
-                  <ArrowUpRight size={14} strokeWidth={1.8} />
+                  <ArrowRight size={14} strokeWidth={1.8} />
                 </Link>
               </div>
             </motion.div>
