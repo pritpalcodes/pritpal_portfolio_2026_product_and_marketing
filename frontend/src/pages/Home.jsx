@@ -2,25 +2,18 @@ import { useEffect, useState } from "react";
 import Sidebar from "../components/Sidebar";
 import MobileNav from "../components/MobileNav";
 import Hero from "../components/Hero";
-import AboutSection from "../components/AboutSection";
 import ProjectSection from "../components/ProjectSection";
 import PlaygroundSection from "../components/PlaygroundSection";
 import ExperienceSection from "../components/ExperienceSection";
-import CertificationsSection from "../components/CertificationsSection";
 import WritingSection from "../components/WritingSection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import CommandPalette from "../components/CommandPalette";
 import EasterEgg from "../components/EasterEgg";
+import ScrollNudge from "../components/ScrollNudge";
 import site from "../data/site.json";
 
-const SECTIONS = [
-  "home",
-  "playground",
-  "experience",
-  "writing",
-  "contact",
-];
+const SECTIONS = ["home", "playground", "experience", "writing"];
 
 export default function Home() {
   const [active, setActive] = useState("home");
@@ -46,28 +39,33 @@ export default function Home() {
     return () => observer.disconnect();
   }, []);
 
+  const externalUrls = {
+    certifications: site.socials.linkedinCertifications,
+    linkedin: site.socials.linkedin,
+  };
+
   return (
-    <div className="paper-grain">
+    <div className="relative min-h-screen">
+      <div className="paper-bg" aria-hidden />
       <Sidebar
         active={active}
         onNavigate={navigateTo}
-        certificationsUrl={site.socials.certifications}
+        externalUrls={externalUrls}
       />
       <MobileNav
         active={active}
         onNavigate={navigateTo}
-        certificationsUrl={site.socials.certifications}
+        externalUrls={externalUrls}
       />
       <CommandPalette onNavigate={navigateTo} />
       <EasterEgg />
+      <ScrollNudge />
 
       <main className="relative z-10">
         <Hero />
-        <AboutSection />
         <ProjectSection />
         <PlaygroundSection />
         <ExperienceSection />
-        <CertificationsSection />
         <WritingSection />
         <ContactSection />
         <Footer />

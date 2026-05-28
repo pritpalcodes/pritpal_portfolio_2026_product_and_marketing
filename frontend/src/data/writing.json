@@ -1,32 +1,63 @@
 [
   {
+    "slug": "boring-half-of-growth",
     "title": "The boring half of growth: why most experiments don't ship",
-    "date": "Coming soon",
+    "date": "Dec 2025",
+    "readTime": "5 min read",
     "summary": "On the unglamorous loop between an idea and a working experiment, and why most teams never close it.",
-    "url": "#"
+    "cover": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80",
+    "body": [
+      "Most teams I've worked with don't have an ideas problem. They have a closure problem. The doc gets written, the slack thread gets long, the dashboard gets opened — and then nothing actually changes in the product.",
+      "Growth is two halves. The first half is glamorous: spotting a friction, sketching a hypothesis, arguing about whether copy or layout matters more. The second half is the boring one — instrumenting the page, checking the funnel, fighting with QA, writing the experiment doc, deciding what 'won' actually means.",
+      "If you skip the boring half, you don't have a growth program. You have a list of opinions with a Notion link.",
+      "The fix isn't a better framework. It's a posture: treat shipping the measurement as part of shipping the experiment. Done means decided."
+    ]
   },
   {
+    "slug": "latency-is-a-product-surface",
     "title": "Latency is a product surface",
     "date": "Coming soon",
+    "readTime": "Draft",
     "summary": "Notes on how response time shapes trust, monetisation, and the felt sense of intelligence in AI products.",
-    "url": "#"
+    "cover": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=2000&q=80",
+    "body": [
+      "We talk about latency like it's a performance number — p95, p99, time-to-first-token. But in AI products, latency is a felt surface. It's the moment where the user decides whether the product is thinking, stalling, or broken.",
+      "This piece is still being written. The shape of it: latency as ad inventory, latency as trust, and the small UX decisions that turn waiting into anticipation."
+    ]
   },
   {
+    "slug": "marketplaces-win-on-measurement",
     "title": "Marketplaces win on measurement, not supply",
     "date": "Coming soon",
+    "readTime": "Draft",
     "summary": "Why GPS, attribution, and unit economics matter more than another driver acquisition campaign.",
-    "url": "#"
+    "cover": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=2000&q=80",
+    "body": [
+      "Every two-sided marketplace I've sketched ends up with the same realisation: the bottleneck isn't acquiring supply or demand. It's that nobody trusts the numbers.",
+      "More to come — this one is brewing alongside the Moving Targets case study."
+    ]
   },
   {
+    "slug": "obvious-after-built",
     "title": "Good products feel obvious only after they're built",
     "date": "Coming soon",
+    "readTime": "Draft",
     "summary": "A short essay on taste, ambiguity, and the quiet work of deciding what deserves to exist.",
-    "url": "#"
+    "cover": "https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?auto=format&fit=crop&w=2000&q=80",
+    "body": [
+      "Type 'product' on this site for the short version. The long version is still being written."
+    ]
   },
   {
+    "slug": "0-to-1-is-a-posture",
     "title": "0 → 1 isn't a phase, it's a posture",
     "date": "Coming soon",
+    "readTime": "Draft",
     "summary": "What changes (and what doesn't) when you stop optimising and start originating.",
-    "url": "#"
+    "cover": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=2000&q=80",
+    "body": [
+      "Most of us are taught to optimise. The hardest part of 0 → 1 is unlearning the gravitational pull of the existing graph.",
+      "Full essay coming soon."
+    ]
   }
 ]

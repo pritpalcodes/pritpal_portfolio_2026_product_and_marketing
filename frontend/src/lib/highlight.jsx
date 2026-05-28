@@ -1,6 +1,7 @@
 import React from "react";
 
 const KEYWORDS = [
+  "B2B SaaS",
   "growth",
   "users",
   "experiments",
@@ -18,15 +19,12 @@ const KEYWORDS = [
   "marketplace",
   "monetisation",
   "monetization",
+  "storytelling",
+  "Figma"
 ];
 
-/**
- * Splits a string into highlighted spans for known keywords.
- * Case-insensitive, preserves original casing.
- */
 export function highlight(text) {
   if (!text) return text;
-  // build regex once, sorted by length desc so multi-word matches first
   const sorted = [...KEYWORDS].sort((a, b) => b.length - a.length);
   const pattern = new RegExp(`\\b(${sorted.map(escape).join("|")})\\b`, "gi");
   const parts = text.split(pattern);

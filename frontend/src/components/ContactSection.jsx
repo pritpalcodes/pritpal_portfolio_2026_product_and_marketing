@@ -1,13 +1,10 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Copy, Check, Linkedin, Github, FileText, Twitter, BookOpen, Mail } from "lucide-react";
+import { Copy, Check, Linkedin, FileText, Mail } from "lucide-react";
 import site from "../data/site.json";
 
 const ICONS = [
   { key: "linkedin", icon: Linkedin, label: "LinkedIn", url: site.socials.linkedin },
-  { key: "github", icon: Github, label: "Github", url: site.socials.github },
-  { key: "twitter", icon: Twitter, label: "Twitter", url: site.socials.twitter },
-  { key: "medium", icon: BookOpen, label: "Medium", url: site.socials.medium },
   { key: "resume", icon: FileText, label: "Resume", url: site.resume },
   { key: "email", icon: Mail, label: "Email", url: `mailto:${site.email}` },
 ];
@@ -27,8 +24,8 @@ export default function ContactSection() {
       data-testid="contact-section"
       className="relative px-6 sm:px-12 lg:px-20 max-w-5xl mx-auto py-24 sm:py-36 text-center"
     >
-      <div className="text-xs uppercase tracking-[0.2em] text-neutral-400 mb-4">
-        07 · Contact
+      <div className="text-xs uppercase tracking-[0.22em] text-neutral-400 mb-4">
+        Get in touch
       </div>
       <h2 className="font-serif text-4xl sm:text-6xl leading-tight">
         Let's build something <em>weird.</em>
@@ -56,7 +53,7 @@ export default function ContactSection() {
           <motion.a
             key={key}
             href={url}
-            target={url.startsWith("mailto") || url === "#" ? undefined : "_blank"}
+            target={url.startsWith("mailto") ? undefined : "_blank"}
             rel="noopener noreferrer"
             data-testid={`social-${key}`}
             whileHover={{ y: -3 }}

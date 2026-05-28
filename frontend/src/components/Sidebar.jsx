@@ -6,19 +6,20 @@ import {
   Briefcase,
   Award,
   PenLine,
-  Mail,
+  Linkedin,
 } from "lucide-react";
 
 const ITEMS = [
-  { id: "home", label: "Home", icon: Home },
-  { id: "playground", label: "Playground", icon: FlaskConical },
-  { id: "experience", label: "Experience", icon: Briefcase },
-  { id: "certifications", label: "Certifications", icon: Award },
-  { id: "writing", label: "Writing", icon: PenLine },
-  { id: "contact", label: "Contact", icon: Mail },
+  { id: "home", label: "Home", icon: Home, type: "nav" },
+  { id: "playground", label: "Playground", icon: FlaskConical, type: "nav" },
+  { id: "experience", label: "Experience", icon: Briefcase, type: "nav" },
+  { id: "certifications", label: "Certifications", icon: Award, type: "external" },
+  { id: "writing", label: "Writing", icon: PenLine, type: "nav" },
+  { id: "divider", type: "divider" },
+  { id: "linkedin", label: "LinkedIn", icon: Linkedin, type: "external" },
 ];
 
-export default function Sidebar({ active, onNavigate, certificationsUrl }) {
+export default function Sidebar({ active, onNavigate, externalUrls }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -32,16 +33,26 @@ export default function Sidebar({ active, onNavigate, certificationsUrl }) {
       className="fixed left-5 top-1/2 -translate-y-1/2 z-40 hidden md:flex flex-col rounded-2xl bg-white/85 backdrop-blur-md border border-black/5 soft-shadow overflow-hidden"
       style={{ padding: 8 }}
     >
-      {ITEMS.map(({ id, label, icon: Icon }) => {
+      {ITEMS.map((item) => {
+        if (item.type === "divider") {
+          return (
+            <div
+              key="divider"
+              data-testid="nav-divider"
+              className="my-2 mx-3 h-px bg-black/10"
+            />
+          );
+        }
+        const { id, label, icon: Icon } = item;
         const isActive = active === id;
-        const isCert = id === "certifications";
+        const isExternal = item.type === "external";
         return (
           <button
             key={id}
             data-testid={`nav-${id}`}
             onClick={() => {
-              if (isCert && certificationsUrl) {
-                window.open(certificationsUrl, "_blank", "noopener");
+              if (isExternal && externalUrls && externalUrls[id]) {
+                window.open(externalUrls[id], "_blank", "noopener");
               } else {
                 onNavigate(id);
               }

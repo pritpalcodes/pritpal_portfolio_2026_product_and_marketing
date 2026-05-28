@@ -5,9 +5,9 @@ import {
   FlaskConical,
   Briefcase,
   PenLine,
-  Mail,
   Award,
   FileText,
+  Linkedin,
   Search,
 } from "lucide-react";
 
@@ -16,9 +16,9 @@ const ACTIONS = (nav, openLink) => [
   { id: "projects", label: "Go to Projects", icon: Briefcase, run: () => nav("projects") },
   { id: "playground", label: "Go to Playground", icon: FlaskConical, run: () => nav("playground") },
   { id: "writing", label: "Go to Writing", icon: PenLine, run: () => nav("writing") },
-  { id: "contact", label: "Go to Contact", icon: Mail, run: () => nav("contact") },
   { id: "resume", label: "Open Resume", icon: FileText, run: () => openLink("/assets/Pritpal_Singh_Resume.pdf") },
   { id: "cert", label: "View Certifications (LinkedIn)", icon: Award, run: () => openLink("https://www.linkedin.com/in/oye-pritpal/details/certifications/") },
+  { id: "linkedin", label: "Open LinkedIn", icon: Linkedin, run: () => openLink("https://www.linkedin.com/in/oye-pritpal/") },
 ];
 
 export default function CommandPalette({ onNavigate }) {

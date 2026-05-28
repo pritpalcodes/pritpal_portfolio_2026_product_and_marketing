@@ -4,8 +4,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Lenis from "lenis";
 import Home from "@/pages/Home";
 import ProjectDetail from "@/pages/ProjectDetail";
-import CustomCursor from "@/components/CustomCursor";
+import WritingDetail from "@/pages/WritingDetail";
+import PlaygroundDetail from "@/pages/PlaygroundDetail";
 import ScrollProgress from "@/components/ScrollProgress";
+import ClickPop from "@/components/ClickPop";
 
 function App() {
   useEffect(() => {
@@ -28,11 +30,13 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <CustomCursor />
         <ScrollProgress />
+        <ClickPop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects/:slug" element={<ProjectDetail />} />
+          <Route path="/writing/:slug" element={<WritingDetail />} />
+          <Route path="/playground/:slug" element={<PlaygroundDetail />} />
         </Routes>
       </BrowserRouter>
     </div>

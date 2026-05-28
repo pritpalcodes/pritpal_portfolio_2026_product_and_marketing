@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import writing from "../data/writing.json";
 import { ArrowUpRight } from "lucide-react";
 
@@ -10,7 +11,7 @@ export default function WritingSection() {
     >
       <div className="mb-12 flex items-baseline justify-between gap-6">
         <div>
-          <div className="text-xs uppercase tracking-[0.2em] text-neutral-400 mb-3">
+          <div className="text-xs uppercase tracking-[0.22em] text-neutral-400 mb-3">
             05 · Writing
           </div>
           <h2 className="font-serif text-4xl sm:text-5xl">
@@ -24,9 +25,10 @@ export default function WritingSection() {
 
       <ul className="divide-y divide-black/10">
         {writing.map((w, i) => (
-          <li key={i} data-testid={`writing-${i}`}>
-            <a
-              href={w.url}
+          <li key={w.slug} data-testid={`writing-${i}`}>
+            <Link
+              to={`/writing/${w.slug}`}
+              data-testid={`writing-link-${w.slug}`}
               className="group flex items-center justify-between gap-6 py-6 transition-transform"
             >
               <div className="flex-1 min-w-0">
@@ -45,7 +47,7 @@ export default function WritingSection() {
                   <ArrowUpRight size={14} strokeWidth={1.8} />
                 </span>
               </div>
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
