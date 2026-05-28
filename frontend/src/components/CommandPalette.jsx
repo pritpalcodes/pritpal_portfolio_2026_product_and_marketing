@@ -5,7 +5,6 @@ import {
   FlaskConical,
   Briefcase,
   PenLine,
-  Award,
   FileText,
   Linkedin,
   Search,
@@ -17,7 +16,6 @@ const ACTIONS = (nav, openLink) => [
   { id: "playground", label: "Go to Playground", icon: FlaskConical, run: () => nav("playground") },
   { id: "writing", label: "Go to Writing", icon: PenLine, run: () => nav("writing") },
   { id: "resume", label: "Open Resume", icon: FileText, run: () => openLink("/assets/Pritpal_Singh_Resume.pdf") },
-  { id: "cert", label: "View Certifications (LinkedIn)", icon: Award, run: () => openLink("https://www.linkedin.com/in/oye-pritpal/details/certifications/") },
   { id: "linkedin", label: "Open LinkedIn", icon: Linkedin, run: () => openLink("https://www.linkedin.com/in/oye-pritpal/") },
 ];
 
